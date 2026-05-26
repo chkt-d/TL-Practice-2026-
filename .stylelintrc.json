@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-css-modules"],
+  "plugins": ["stylelint-order", "stylelint-use-logical"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "csstools/use-logical": true
+  }
+}

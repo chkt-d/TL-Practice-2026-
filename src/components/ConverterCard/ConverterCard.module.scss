@@ -1,0 +1,43 @@
+.card {
+  background-color: #fff;
+  border-radius: 30px;
+  inline-size: 100%;
+  max-inline-size: 1257px;
+  padding: 30px;
+}
+
+.divider {
+  align-items: center;
+  border-block-start: 1px solid #d9d9d9;
+  display: flex;
+  inline-size: 100%;
+  justify-content: center;
+  margin-block: 50px 25px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-block-start: 27px;
+}
+
+.toggle {
+  align-items: center;
+  background-color: #d9d9d9;
+  border: 0;
+  border-radius: 23px;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 22px;
+  font-weight: 400;
+  gap: 12px;
+  inline-size: 287px;
+  justify-content: center;
+  line-height: 1;
+  margin-block-start: -24px;
+  min-block-size: 48px;
+  padding: 0;
+}

@@ -1,0 +1,47 @@
+.currency-row {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  display: flex;
+  inline-size: 100%;
+  max-inline-size: 601px;
+  min-block-size: 57px;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  flex: 0 0 111px;
+  font: inherit;
+  font-size: 22px;
+  inline-size: 100%;
+  outline: none;
+  padding: 15px 20px;
+}
+
+.select {
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg width='30' height='30' viewBox='0 0 26 23' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12.9902 22.5L-0.000146866 0L25.9806 0L12.9902 22.5Z' fill='%23D9D9D9'/></svg>");
+  background-position: calc(100% - 34px) center;
+  background-repeat: no-repeat;
+  border: 0;
+  color: #000;
+  flex: 1;
+  font: inherit;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  outline: none;
+  padding: 8px 30px;
+  padding-block: 13px;
+}
+
+.divider {
+  background-color: #D9D9D9;
+  block-size: 40px;
+  flex: 0 0 1px;
+}
