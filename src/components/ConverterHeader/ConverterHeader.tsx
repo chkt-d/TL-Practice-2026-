@@ -8,13 +8,13 @@ type ConverterHeaderProps = {
   updatedAt: string;
 };
 
-export function ConverterHeader({
+export const ConverterHeader = ({
   fromAmount,
   fromCurrencyName,
   resultAmount,
   toCurrencyName,
   updatedAt
-}: ConverterHeaderProps) {
+}: ConverterHeaderProps) => {
   return (
     <header className={styles.header}>
       <p className={styles.subtitle}>

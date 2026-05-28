@@ -7,9 +7,9 @@ type MoreAboutProps = {
   toCurrency: Currency;
 };
 
-export function MoreAboutCurrencies({ fromCurrency, toCurrency }: MoreAboutProps) {
+export const MoreAboutCurrencies = ({ fromCurrency, toCurrency }: MoreAboutProps) => {
   return (
-    <section className={styles['more-about']}>
+    <section className={styles.moreAbout}>
       <CurrencyDetails currency={fromCurrency} />
       <CurrencyDetails currency={toCurrency} />
     </section>

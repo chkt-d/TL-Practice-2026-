@@ -8,13 +8,13 @@ type CurrencyRowProps = {
   selectedCurrencyCode: CurrencyCode;
 };
 
-export function CurrencyRow({ amount, currencies, selectedCurrencyCode }: CurrencyRowProps) {
+export const CurrencyRow = ({ amount, currencies, selectedCurrencyCode }: CurrencyRowProps) => {
   return (
-    <div className={styles['currency-row']}>
+    <div className={styles.currencyRow}>
       <input aria-label="Currency amount" className={styles.input} readOnly type="text" value={amount} />
-      
+
       <div className={styles.divider} />
-      
+
       <select className={styles.select} value={selectedCurrencyCode}>
         {currencies.map((currency) => (
           <option key={currency.code} value={currency.code}>

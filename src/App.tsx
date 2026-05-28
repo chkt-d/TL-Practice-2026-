@@ -6,7 +6,7 @@ import styles from './App.module.scss';
 const fromCurrency = currencies.find((currency) => currency.code === 'PLN');
 const toCurrency = currencies.find((currency) => currency.code === 'JPY');
 
-function App() {
+export const App = () => {
   if (!fromCurrency || !toCurrency) {
     return null;
   }
@@ -17,5 +17,3 @@ function App() {
     </main>
   );
 }
-
-export default App;
