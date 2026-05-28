@@ -1,4 +1,4 @@
-import type { Currency } from '../../data/currencies';
+import type { Currency } from '../../models/currency';
 import styles from './CurrencyDetails.module.scss';
 
 export const CurrencyDetails = ({ currency }: { currency: Currency }) => {

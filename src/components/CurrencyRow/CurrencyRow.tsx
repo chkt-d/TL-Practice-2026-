@@ -1,11 +1,11 @@
-import type { Currency, CurrencyCode } from '../../data/currencies';
+import type { Currency } from '../../models/currency';
 
 import styles from './CurrencyRow.module.scss';
 
 type CurrencyRowProps = {
   amount: string;
   currencies: Currency[];
-  selectedCurrencyCode: CurrencyCode;
+  selectedCurrencyCode: string;
 };
 
 export const CurrencyRow = ({ amount, currencies, selectedCurrencyCode }: CurrencyRowProps) => {

@@ -1,4 +1,4 @@
-import type { Currency } from '../../data/currencies';
+import type { Currency } from '../../models/currency';
 import { CurrencyDetails } from '../CurrencyDetails/CurrencyDetails';
 import styles from './MoreAboutCurrencies.module.scss';
 

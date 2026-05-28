@@ -1,6 +1,6 @@
-import type { Currency } from '../../data/currencies';
+import type { Currency } from '../../models/currency';
 
-import { currencies } from '../../data/currencies';
+import { currencies } from '../../mocks/currencies';
 import { ConverterHeader } from '../ConverterHeader/ConverterHeader';
 import { CurrencyRow } from '../CurrencyRow/CurrencyRow';
 import { MoreAboutCurrencies } from '../MoreAboutCurrencies/MoreAboutCurrencies';
