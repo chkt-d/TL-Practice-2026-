@@ -1,9 +1,9 @@
 import styles from './ConverterHeader.module.scss';
 
 type ConverterHeaderProps = {
-  fromAmount: string;
+  fromAmount: number;
   fromCurrencyName: string;
-  resultAmount: string;
+  resultAmount: number;
   toCurrencyName: string;
   updatedAt: string;
 };
@@ -22,7 +22,7 @@ export const ConverterHeader = ({
       </p>
 
       <h1 className={styles.result}>
-        {resultAmount} {toCurrencyName}
+        {Number(resultAmount.toFixed(2))} {toCurrencyName}
       </h1>
 
       <p className={styles.date}>{updatedAt}</p>
