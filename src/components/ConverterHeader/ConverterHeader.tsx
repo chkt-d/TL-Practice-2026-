@@ -28,4 +28,4 @@ export const ConverterHeader = ({
       <p className={styles.date}>{updatedAt}</p>
     </header>
   );
-}
+};

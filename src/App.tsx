@@ -16,4 +16,4 @@ export const App = () => {
       <ConverterCard fromCurrency={fromCurrency} toCurrency={toCurrency} />
     </main>
   );
-}
+};

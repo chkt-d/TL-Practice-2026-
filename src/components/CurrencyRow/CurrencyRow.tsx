@@ -1,4 +1,4 @@
-import type { Currency, CurrencyCode } from '../../data/currencies';
+import type { Currency, CurrencyCode } from '../../models/currency';
 
 import styles from './CurrencyRow.module.scss';
 
@@ -24,4 +24,4 @@ export const CurrencyRow = ({ amount, currencies, selectedCurrencyCode }: Curren
       </select>
     </div>
   );
-}
+};
