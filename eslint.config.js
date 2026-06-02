@@ -66,9 +66,6 @@ export default defineConfig([
           caughtErrorsIgnorePattern: '^_'
         }
       ],
-      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-      'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
-      'no-restricted-exports': ['error', { restrictDefaultExports: { direct: true } }],
       'import/no-default-export': 'error'
     }
   },

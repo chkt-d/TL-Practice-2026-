@@ -1,24 +1,28 @@
 .main {
-  align-items: center;
-  background-color: #ebf4fb;
   display: flex;
   justify-content: center;
+  align-items: center;
+
   min-block-size: 100vh;
   padding: 30px;
+
+  background-color: #ebf4fb;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 30px;
   inline-size: 100%;
   max-inline-size: 1257px;
   padding: 30px;
+
+  background-color: #fff;
+  border-radius: 30px;
 }
 
 .form {
-  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 22px;
+  align-items: center;
+
   margin-block-start: 27px;
 }

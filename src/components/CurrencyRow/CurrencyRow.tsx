@@ -7,13 +7,26 @@ type CurrencyRowProps = {
   currencies: Currency[];
   selectedCurrencyCode: string;
   onCurrencyChange: (currencyCode: string) => void;
-  onAmountChange?: (amount: string) => void
+  onAmountChange?: (amount: string) => void;
 };
 
-export const CurrencyRow = ({ amount, currencies, selectedCurrencyCode, onCurrencyChange, onAmountChange }: CurrencyRowProps) => {
+export const CurrencyRow = ({
+  amount,
+  currencies,
+  selectedCurrencyCode,
+  onCurrencyChange,
+  onAmountChange
+}: CurrencyRowProps) => {
   return (
     <div className={styles.currencyRow}>
-      <input aria-label="Currency amount" className={styles.input} disabled={!onAmountChange} type="text" value={amount} onChange={(e) => onAmountChange?.(e.target.value)} />
+      <input
+        aria-label="Currency amount"
+        className={styles.input}
+        disabled={!onAmountChange}
+        type="text"
+        value={amount}
+        onChange={(e) => onAmountChange?.(e.target.value)}
+      />
 
       <div className={styles.divider} />
 
@@ -26,4 +39,4 @@ export const CurrencyRow = ({ amount, currencies, selectedCurrencyCode, onCurren
       </select>
     </div>
   );
-}
+};

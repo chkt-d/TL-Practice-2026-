@@ -7,7 +7,9 @@ export const CurrencyDetails = ({ currency }: { currency: Currency }) => {
       <h2 className={styles.currencyTitle}>
         {currency.name} - {currency.code} - {currency.symbol}
       </h2>
-      <p className={styles.currencyDescription}>{currency.description}</p>
+      <p className={styles.currencyDescription}>
+        {currency.description ? currency.description : 'Description will be available soon'}
+      </p>
     </article>
   );
-}
+};

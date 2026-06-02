@@ -1,4 +1,5 @@
 import styles from './ConverterHeader.module.scss';
+import { formatDateTime } from '../../utils/formatDateTime';
 
 type ConverterHeaderProps = {
   fromAmount: number;
@@ -25,7 +26,7 @@ export const ConverterHeader = ({
         {Number(resultAmount.toFixed(2))} {toCurrencyName}
       </h1>
 
-      <p className={styles.date}>{updatedAt}</p>
+      <p className={styles.date}>{formatDateTime(updatedAt)}</p>
     </header>
   );
-}
+};

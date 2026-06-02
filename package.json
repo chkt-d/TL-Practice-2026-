@@ -6,20 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check",
     "preview": "vite preview",
     "test": "vitest run --environment jsdom",
     "test:watch": "vitest --environment jsdom",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint src --ext .ts,.tsx",
     "lint:stylelint": "stylelint src/**/*.scss",
+    "lint:prettier": "prettier . --check",
     "lint-fix": "run-s lint-fix:*",
     "lint-fix:eslint": "npm run lint:eslint -- --fix",
     "lint-fix:stylelint": "npm run lint:stylelint -- --fix",
-    "prettier:write": "prettier --write \"**/*.{ts,tsx,js,jsx,json,scss,css,html,md}\""
+    "lint-fix:prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,scss,css,html,md}\""
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
