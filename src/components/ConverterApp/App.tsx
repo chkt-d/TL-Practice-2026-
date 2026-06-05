@@ -1,5 +1,5 @@
-import { ConverterCard } from './components/ConverterCard/ConverterCard';
-import { currencies } from './data/currencies';
+import { ConverterCard } from '../ConverterCard/ConverterCard';
+import { currencies } from '../../data/currencies';
 
 import styles from './App.module.scss';
 
