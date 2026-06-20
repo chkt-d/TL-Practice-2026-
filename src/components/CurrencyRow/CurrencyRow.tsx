@@ -3,11 +3,11 @@ import type { Currency } from '../../models/currency';
 import styles from './CurrencyRow.module.scss';
 
 type CurrencyRowProps = {
-  amount: string | number;
+  amount: number;
   currencies: Currency[];
   selectedCurrencyCode: string;
   onCurrencyChange: (currencyCode: string) => void;
-  onAmountChange?: (amount: string) => void;
+  onAmountChange?: (amount: number) => void;
 };
 
 export const CurrencyRow = ({
@@ -23,14 +23,18 @@ export const CurrencyRow = ({
         aria-label="Currency amount"
         className={styles.input}
         disabled={!onAmountChange}
-        type="text"
+        type="number"
         value={amount}
-        onChange={(e) => onAmountChange?.(e.target.value)}
+        onChange={(event) => onAmountChange?.(Number(event.target.value))}
       />
 
       <div className={styles.divider} />
 
-      <select className={styles.select} value={selectedCurrencyCode} onChange={(e) => onCurrencyChange(e.target.value)}>
+      <select
+        className={styles.select}
+        value={selectedCurrencyCode}
+        onChange={(event) => onCurrencyChange(event.target.value)}
+      >
         {currencies.map((currency) => (
           <option key={currency.code} value={currency.code}>
             {currency.code}
