@@ -19,7 +19,7 @@ export const MoreAboutCurrencies = ({ fromCurrency, toCurrency }: MoreAboutProps
           <ArrowIcon />
         </button>
       </div>
-      <section className={styles.moreAbout}>
+      <section className={styles.moreAbout} data-testid="more-about">
         <CurrencyDetails currency={fromCurrency} />
         <CurrencyDetails currency={toCurrency} />
       </section>
