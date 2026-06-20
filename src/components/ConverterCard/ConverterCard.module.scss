@@ -1,0 +1,17 @@
+.card {
+  inline-size: 100%;
+  max-inline-size: 1257px;
+  padding: 30px;
+
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+
+  margin-block-start: 27px;
+}
